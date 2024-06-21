@@ -61,7 +61,8 @@ def print_tree(tree, prefix=''):
         print(f"{prefix}{handle1}{icon}{item}{lineend}")
         if subtree is not None:
             print_tree(subtree, prefix + handle2)
-            # print(p3)
+            if loop != total:
+                print(p3)
 
 # def sort_dict(d):
 #     """ Recursively sort a dictionary and its sub-dictionaries by keys. """
