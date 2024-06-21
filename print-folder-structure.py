@@ -74,6 +74,7 @@ def print_tree(tree, prefix=''):
 
 def sort_key(item):
     key, value = item
+    key = key.lower()
     if value is None:
         return (0, key)  # Group None values first
     elif isinstance(value, dict):
